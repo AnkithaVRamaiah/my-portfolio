@@ -92,20 +92,24 @@
         </div>
 
         <!-- Project Cards with Tags -->
-        <div class="project-card" data-tool="docker kubernetes aws cicd" onclick="showPopup('project1')">
-            <h3>1. Automated CI/CD for Go Web App</h3>
-            <p>Click to see details</p>
-        </div>
+        <!-- Project 1: CI/CD -->
+<div class="project-card" data-tool="cicd" onclick="showPopup('project1')">
+    <h3>1. Automated CI/CD for Go Web App</h3>
+    <p>Click to see details</p>
+</div>
 
-        <div class="project-card" data-tool="kubernetes aws cicd" onclick="showPopup('project2')">
-            <h3>2. Deploying Application on AWS EKS using Fargate and ALB</h3>
-            <p>Click to see details</p>
-        </div>
+<!-- Project 2: AWS -->
+<div class="project-card" data-tool="aws" onclick="showPopup('project2')">
+    <h3>2. Deploying Application on AWS EKS using Fargate and ALB</h3>
+    <p>Click to see details</p>
+</div>
 
-        <div class="project-card" data-tool="aws" onclick="showPopup('project3')">
-            <h3>3. Load Balancing Python App with AWS ALB</h3>
-            <p>Click to see details</p>
-        </div>
+<!-- Project 3: AWS -->
+<div class="project-card" data-tool="aws" onclick="showPopup('project3')">
+    <h3>3. Load Balancing Python App with AWS ALB</h3>
+    <p>Click to see details</p>
+</div>
+
 
         <!-- Popups -->
         <div id="project1" class="popup">
@@ -179,3 +183,4 @@
 </body>
 
 </html>
+
