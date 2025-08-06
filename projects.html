@@ -110,6 +110,13 @@
     <p>Click to see details</p>
 </div>
 
+<!-- Project 4: Shell Scripting -->
+<div class="project-card" data-tool="shell" onclick="showPopup('project4')">
+    <h3>Node Health Monitoring Script</h3>
+    <p>Click to see details</p>
+</div>
+
+
 
         <!-- Popups -->
         <div id="project1" class="popup">
@@ -152,6 +159,26 @@
             </div>
         </div>
 
+        <div id="project4" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('project4')">&times;</span>
+        <h3>Node Health Monitoring Script</h3>
+        <p><strong>Problem:</strong> Monitoring system health manually (disk, memory, CPU, running processes) across multiple virtual machines is time-consuming and prone to error.</p>
+        <p><strong>Solution:</strong> I created a reusable Bash script that quickly checks system metrics like disk usage, memory consumption, CPU cores, and running services. It automates monitoring, helps spot issues fast, and is easily shareable via GitHub.</p>
+        <ul>
+            <li>Used commands like <code>df</code>, <code>free</code>, <code>nproc</code>, <code>ps</code>, <code>top</code>, <code>awk</code>, <code>grep</code></li>
+            <li>Added safe execution using <code>set -x</code>, <code>set -e</code>, and <code>trap</code></li>
+            <li>Made it user-friendly with <code>echo</code> messages and comments</li>
+            <li>Helps DevOps engineers troubleshoot performance issues easily</li>
+        </ul>
+        <p><strong>To know more about this project:</strong><br>
+        <a href="https://github.com/AnkithaVRamaiah/Shellscripting-projects/blob/main/Project1/README.md" target="_blank">
+            <i class="fab fa-github"></i> View on GitHub
+        </a></p>
+    </div>
+</div>
+
+
     </main>
 
     <footer>
@@ -183,4 +210,5 @@
 </body>
 
 </html>
+
 
