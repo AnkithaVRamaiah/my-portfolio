@@ -94,7 +94,7 @@
         <!-- Project Cards with Tags -->
         <!-- Project 1: CI/CD -->
 <div class="project-card" data-tool="cicd" onclick="showPopup('project1')">
-    <h3>Automated CI/CD for Go Web App</h3>
+    <h3>End-to-End DevOps Pipeline for a Go Web Application</h3>
     <p>Click to see details</p>
 </div>
 
@@ -120,18 +120,33 @@
 
         <!-- Popups -->
         <div id="project1" class="popup">
-            <div class="popup-content">
-                <span class="close" onclick="closePopup('project1')">&times;</span>
-                <h3>Automated CI/CD for Go Web App</h3>
-                <p>I designed and implemented a complete CI/CD pipeline for deploying a containerized Go web application on an Amazon EKS cluster.</p>
-                <ul>
-                    <li>Containerized the Go application using Docker</li>
-                    <li>Created Kubernetes manifests and Helm charts</li>
-                    <li>Set up a GitHub Actions workflow for parameterized CI/CD</li>
-                    <li>Configured Argo CD to automatically sync Helm chart changes to EKS</li>
-                </ul>
-            </div>
-        </div>
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('project1')">&times;</span>
+        <h3>End-to-End DevOps Pipeline for a Go Web Application</h3>
+        <p><strong>Problem:</strong> Deploying apps manually is time-consuming and error-prone. Without automation, teams face issues with environment inconsistencies, slow feedback, and unreliable deployments.</p>
+
+        <p><strong>What You'll Learn:</strong></p>
+        <ul>
+            <li>Build optimized Docker images using multi-stage builds</li>
+            <li>Run and manage containers using Docker</li>
+            <li>Automate CI workflows with GitHub Actions</li>
+            <li>Implement CD using Argo CD and GitOps principles</li>
+        </ul>
+
+        <p><strong>Solution Overview:</strong></p>
+        <ul>
+            <li><strong>Docker:</strong> Multi-stage Dockerfile to reduce image size and improve security</li>
+            <li><strong>CI:</strong> GitHub Actions to automate building, testing, and pushing Docker images</li>
+            <li><strong>CD:</strong> Argo CD deploys and syncs app with Kubernetes based on Git state</li>
+            <li><strong>GitOps:</strong> Git is the source of truth for deployments, providing auditability and automation</li>
+        </ul>
+
+        <p><strong>GitHub Repository:</strong><br>
+        <a href="https://github.com/AnkithaVRamaiah/go-app-cicd" target="_blank">
+            <i class="fab fa-github"></i> View Project on GitHub
+        </a></p>
+    </div>
+</div>
 
         <div id="project2" class="popup">
             <div class="popup-content">
@@ -210,5 +225,6 @@
 </body>
 
 </html>
+
 
 
